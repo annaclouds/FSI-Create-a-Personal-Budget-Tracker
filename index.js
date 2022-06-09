@@ -25,6 +25,20 @@ let annualExpenses = 0
 // 4. add iteration.
 for(let i = 0; i < weeklyExpenseQuestions.length; i++) {
     let answer = parseFloat(window.prompt(weeklyExpenseQuestions[i])); // getting user's string answer and turning it into a number.
-    console.log(answer);
+    console.log("weeklyExpense: ", answer);
     weeklyExpenses = weeklyExpenses + answer; // add the user's answer to the weeklyExpenses total.
+}
+
+// 5. iterate through monthlyExpensQquestions.
+for(let i = 0; i < monthlyExpenseQuestions.length; i++) {
+    let answer = parseFloat(window.prompt(monthlyExpenseQuestions[i])); // getting user's string answer and turning it into a number.
+    console.log("monthlyExpense: ", answer);
+    monthlyExpenses = monthlyExpenses + answer; // add the user's answer to the weeklyExpenses total.
+}
+
+// 6. iterate through annualExpenseQuestions.
+for(let i = 0; i < annualExpenseQuestions.length; i++) {
+    let answer = parseFloat(window.prompt(annualExpenseQuestions[i])); // getting user's string answer and turning it into a number.
+    console.log("annualExpense: ", answer);
+    annualExpenses = annualExpenses + answer; // add the user's answer to the weeklyExpenses total.
 }
